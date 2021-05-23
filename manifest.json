@@ -1,0 +1,18 @@
+{
+        manifest_version": 0.1,
+        "name": "ReviewMetaSort",
+        "version": "0.1",
+
+        "description": "Sort amazon search pages by the reviewmeta adjusted rating stub.",
+
+        "icons": {
+	    "48": "icons/not-made-yet.png"
+	    },
+
+	"content_scripts": [
+	    {
+	      "matches": ["*://*.amazon.com/*"],
+              "js": ["reviewmeta-sort.js"]
+	    }
+	]
+}
